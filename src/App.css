@@ -1,3 +1,77 @@
+/* Animations */
+@keyframes logo-on {
+  0% {
+    fill: #000000;
+  }
+  25% {
+    fill: #000000;
+  }
+  50% {
+    fill: #009901;
+  }
+  75% {
+    fill: #000000;
+  }
+  100% {
+    fill: #000000;
+  }
+}
+
+@keyframes signal-low {
+  0% {
+    fill: #000000;
+  }
+  25% {
+    fill: #f81804;
+  }
+  50% {
+    fill: #000000;
+  }
+  75% {
+    fill: #f81804;
+  }
+  100% {
+    fill: #000000;
+  }
+}
+
+@keyframes signal-mid {
+  0% {
+    fill: #000000;
+  }
+  25% {
+    fill: #e5fb00;
+  }
+  50% {
+    fill: #000000;
+  }
+  75% {
+    fill: #f81804;
+  }
+  100% {
+    fill: #000000;
+  }
+}
+
+@keyframes signal-high {
+  0% {
+    fill: #000000;
+  }
+  25% {
+    fill: #009901;
+  }
+  50% {
+    fill: #000000;
+  }
+  75% {
+    fill: #f81804;
+  }
+  100% {
+    fill: #000000;
+  }
+}
+
+/* Reset */
 html,
 body {
   width: 100vw;
@@ -6,6 +80,7 @@ body {
   padding: 0;
 }
 
+/* Styles */
 #root {
   display: flex;
   justify-content: center;
@@ -23,6 +98,28 @@ body {
   will-change: filter;
   transition: filter 300ms;
   margin-bottom: 3em;
+}
+
+.animated {
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+.logo .on {
+  animation-name: logo-on;
+}
+
+.logo .signal.low {
+  animation-name: signal-low;
+}
+
+.logo .signal.mid {
+  animation-name: signal-mid;
+}
+
+.logo .signal.high {
+  animation-name: signal-high;
 }
 
 .links .link .icon {
