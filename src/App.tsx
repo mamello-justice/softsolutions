@@ -1,7 +1,7 @@
-import { ReactComponent as SoftSolutionsLogo } from "./assets/logo.svg"
-import { ReactComponent as WhatsappLogo } from "./assets/whatsapp.svg"
+import { ReactComponent as SoftSolutionsLogo } from './assets/logo.svg'
+import { ReactComponent as WhatsappLogo } from './assets/whatsapp.svg'
 
-import "./App.css"
+import './App.css'
 
 const App = () => (
   <div className="App">
